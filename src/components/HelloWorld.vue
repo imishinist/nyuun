@@ -83,14 +83,16 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+<script lang="ts">
+import Vue from 'vue'
+import Component from 'vue-class-component'
+
+@Component({
+  name: 'Hello World'
+})
+
+export default class Hello extends Vue {
+  msg: string = 'Welcome to Your Vue.js App'
 }
 </script>
 
